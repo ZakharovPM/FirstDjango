@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+  <li>Главная</li>
+{% endblock %}
+
+{% block content %}
+    <h2>Автор: {{name}} {{surname}}</h2>
+    <b><a href="{%url 'items-list'%}">Список товаров</a></b>
+{% endblock %}
